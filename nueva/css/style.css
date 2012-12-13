@@ -31,7 +31,7 @@ body {
 table {
 	width: 100%;
 	border-collapse: separate;
-	border-spacing: 5px 10px;
+	border-spacing: 30px 20px;
 }
 
 table td {
@@ -87,14 +87,14 @@ header nav {
 
 header nav ul li {
 	display: inline-block;
-	width: 14%;
+	width: 13%;
 	text-align: center;
 	height: 80px;
 }
 
 header nav ul li span.menu {
 	background-color: #6e7070;
-	width: 75%;
+	width: 98%;
 	height: 90%;
 	display: block;
 	margin: 0 auto;
@@ -165,6 +165,7 @@ header nav ul li span.menu div {
 
 #home-contenido #logo-home .redes-so {
 	float: right;
+	padding: 2%;
 }
 
 #home-contenido #logo-home .redes-so a {
@@ -266,6 +267,35 @@ header nav ul li span.menu div {
 #empresa-contenido table td.futuros {
 	background-color: #f5713b;
 	height: 50%
+}
+
+/* QUE HACEMOS */
+
+#que_hacemos-contenido table {
+	height: 100%;
+}
+
+#que_hacemos-contenido table td.logo {
+	border: none;
+	border-radius: 10px;
+	width: 30%;
+	height: 100px;
+	text-align: center;
+}
+
+#que_hacemos-contenido table td.logo img {
+	width: 300px;
+}
+
+#que_hacemos-contenido table td.cont {
+	background-color: #f2742d;
+	width: 70%;
+}
+
+#que_hacemos-contenido table td.perfiles {
+	background-color: #62cc49;
+	width: 30%;
+	font-family: 'bebas_neueregular';
 }
 
 /* ESCUELA */

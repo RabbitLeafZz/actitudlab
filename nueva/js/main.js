@@ -22,7 +22,7 @@ $(document).ready(function() {
 	} else {
 		$("header, body, .secciones").css('width', 1024);
 	}
-	if (height > 800) {
+	if (height > 2000) {
 		$('.contenido, .bx-window').css('height', height-150);
 	} else {
 		$('.contenido, .bx-window').css('height', 650);
