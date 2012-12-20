@@ -80,4 +80,28 @@ $(document).ready(function() {
       	nueva=window.open(this.href, 'Popup', caracteristicas);
       	return false;
  	});
+	
+	/* Esconde y muestra menu de Experiencia */
+
+	$("#toggle-liceos").click(function () {		
+$("#liceo-1").toggle("slow");
+$("#liceo-2").toggle("slow");
+$("#liceo-3").toggle("slow");
+$("#liceo-4").toggle("slow");
+$("#liceo-5").toggle("slow");
+$("#liceo-6").toggle("slow");
+});    
+	$("#toggle-profesores").click(function () {
+$("#profesor-1").toggle("slow");
+$("#profesor-2").toggle("slow");
+$("#profesor-3").toggle("slow");
+$("#profesor-4").toggle("slow");
+$("#profesor-5").toggle("slow");
+$("#profesor-6").toggle("slow");
+});    
+	$("#toggle-alumnos").click(function () {
+$("#profesores").toggle("slow");
+$("#alumnos").toggle("slow");
+});    
+
 });
