@@ -28,6 +28,8 @@ $(document).ready(function() {
 		$('.contenido, .bx-window').css('height', 650);
 	}
 
+	altoCuerpo('home');
+
 	$(window).resize(function() {
 		width = $(window).width();
 		height = $(window).height();
@@ -41,6 +43,8 @@ $(document).ready(function() {
 		} else {
 			$('.contenido, .bx-window').css('height', 650);
 		}
+
+		altoCuerpo('home');
 	});
 
 	/* Menú */
@@ -57,6 +61,8 @@ $(document).ready(function() {
 		clase = clase.replace('menu ', '');
 		$(this).removeClass(clase);
 		$(this).addClass(clase + '-activo');
+
+		altoCuerpo(clase);
 
 		clase = $('span[data-index="' + actual + '"]').attr('class');
 		clase = clase.replace('menu ', '');
@@ -84,24 +90,38 @@ $(document).ready(function() {
 	/* Esconde y muestra menu de Experiencia */
 
 	$("#toggle-liceos").click(function () {		
-$("#liceo-1").toggle("slow");
-$("#liceo-2").toggle("slow");
-$("#liceo-3").toggle("slow");
-$("#liceo-4").toggle("slow");
-$("#liceo-5").toggle("slow");
-$("#liceo-6").toggle("slow");
-});    
+		$(".liceos").toggle();
+		$(".profesores").hide();
+		$("#profesores").hide();
+		$("#alumnos").hide();
+		altoCuerpo('escuela');
+	});    
 	$("#toggle-profesores").click(function () {
-$("#profesor-1").toggle("slow");
-$("#profesor-2").toggle("slow");
-$("#profesor-3").toggle("slow");
-$("#profesor-4").toggle("slow");
-$("#profesor-5").toggle("slow");
-$("#profesor-6").toggle("slow");
-});    
+		$(".profesores").toggle();
+		$(".liceos").hide();
+		$("#profesores").hide();
+		$("#alumnos").hide();
+		altoCuerpo('escuela');
+	});    
 	$("#toggle-alumnos").click(function () {
-$("#profesores").toggle("slow");
-$("#alumnos").toggle("slow");
-});    
+		$("#profesores").toggle();
+		$("#alumnos").toggle();
+		$(".profesores").hide();
+		$(".liceos").hide();
+		altoCuerpo('escuela');
+	});    
 
 });
+
+function altoCuerpo(seccion) {
+	if (seccion == 'home') {
+		home = 400;
+	} else {
+		home = 0;
+	}
+	alto_menu = $('header').height();
+	alto_cuerpo = $('div#' + seccion).height();
+
+	$(".bx-window").css('height', 50 + alto_cuerpo + home);
+	$(".body").css('height', alto_menu + alto_cuerpo + home);
+}

@@ -187,7 +187,12 @@ header nav ul li span.menu div {
 
 #home-contenido table td.actualidad {
 	background-color: #75c263;
-	width: 50%;
+	width: 25%;
+	vertical-align: top;
+}
+
+#home-contenido table td.twitter {
+	width: 25%;
 }
 
 #home-contenido table td.noticias {
@@ -227,6 +232,16 @@ header nav ul li span.menu div {
 	margin-right: 50px;
 	font-family: 'bebas_neueregular';
 	font-size: 17pt;
+}
+
+#home-contenido table td.marcas {
+	background-color: #638dc4;
+}
+
+#home-contenido table td.marcas div img {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
 }
 
 /* EMPRESA */
@@ -472,6 +487,10 @@ header nav ul li span.menu div {
 
 #equipo-contenido table td.row3 {
 	background-color: #f5713b;
+}
+
+img.equipo {
+	width: 500px;
 }
 
 /* BENEFICIOS */
