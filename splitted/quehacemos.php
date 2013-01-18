@@ -83,9 +83,7 @@
 						</table>
 					</div>
 				</div>
-				Almahue 567, Vitacura. Contacto@actitudlab.cl. Fono 34445566. Santiago Chile
-
-		
-		
+				Almahue 567, Vitacura. Contacto@actitudlab.cl. Fono 34445566. Santiago Chile		
+				<?php include('footer.php'); ?>
 	</body>
 </html>
