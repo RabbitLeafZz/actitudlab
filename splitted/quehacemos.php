@@ -30,51 +30,63 @@
 									<!-- item 1 -->
 									  <li>
 									   <a id="cmp01" href="#cmp01">
-										<span class="offset">
+										<div class="offset">
+											<div class="inner-offset">
 										 Parrafo empresa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										</span>
+											</div>
+										</div>
 									   </a>
 									  </li>
 									<!-- item 2 -->
 									  <li>
 										<a id="cmp02" href="#cmp02">
-										 <span class="offset">
+										 <div class="offset">
+											<div class="inner-offset">
 										  Parrafo trabajadores. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										</span>
+											</div>
+										</div>
 									   </a>
 									  </li>
 									<!-- item 3 -->
 									   <li>
 										<a id="cmp03" href="#cmp03">
-										 <span class="offset">
+										 <div class="offset">
+											<div class="inner-offset">
 										  Parrafo formacion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										 </span>
+										 	</div>
+										</div>
 										</a>
 									   </li>
 									  <li>
 									<!-- item 4 -->
 									  <li>
 									   <a id="cmp04" href="#cmp04">
-										<span class="offset">
+										<div class="offset">
+											<div class="inner-offset">
 										 Parrafo liceo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										 </span>
+										 	</div>
+										</div>
 										</a>
 									   </li>
 									  <li>
 									<!-- item 5 -->
 									  <li>
 									   <a id="cmp05" href="#cmp05">
-										<span class="offset">
+										<div class="offset">
+											<div class="inner-offset">
 										 Parrafo capacitados. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										</span>
+											</div>
+										</div>
 									   </a>
 									  </li>
 									<!-- item 6 -->
 									  <li>
 									   <a id="cmp06" href="#cmp06">
-										<span class="offset">
+										<div class="offset">
+											<div class="inner-offset">
 										 Parrafo coach. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur, ante non iaculis suscipit, massa tortor dictum massa, mattis iaculis massa odio sit amet ipsum. Integer posuere enim ac felis feugiat auctor. Ut urna dui, mollis hendrerit fermentum non, lacinia non enim.
-										</span>
+											</div>
+										</div>
 									   </a>
 									  </li>
 									</ul>

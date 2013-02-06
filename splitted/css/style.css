@@ -107,7 +107,7 @@ footer{
 	width: 98%;
 	display: block;
 	border-radius: 10px;
-	cursor: pointer;
+	cursor: default;
 	text-align: center;
 }
 
@@ -304,7 +304,7 @@ ul#cmp {
   background : transparent url(images/quehacemos.png) no-repeat 0 0;
   width : 1014px;
   height : 581px;
-  border : 1px solid #000;
+  
   margin : 0 auto 0;  /* the auto part is for optionally centering the list */
   padding : 0;
 }
@@ -325,33 +325,147 @@ ul#cmp li a {
   This gets rid of the main content-containing outer span and all within, 
   but it remains available to assistive technologies 
 */
-ul#cmp li a span.offset { 
-  margin-top : -9000px; 
-  margin-left : -9000px;
-  position : absolute;
+#cmp01 div.offset, #cmp02 div.offset { 
+	margin-top : -1000px; 
+	margin-left : -9000px;
+	position : absolute;
+
+	width : 150px;
+
+	background: black;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 	
+	padding: 3px;
+
+	
+	transition: margin-top .5s;
+	-moz-transition: margin-top .5s;
+	-webkit-transition: margin-top .5s ;
 }
+
+#cmp01 div.offset:before, #cmp02 div.offset:before{
+	content:""; 
+	position: absolute; 
+	right: 100%; 
+	top: 26px; 
+	width: 0; 
+	height: 0; 
+	border-top: 13px solid transparent; 
+	border-right: 26px solid black; 
+	border-bottom: 13px solid transparent; 
+}
+
+#cmp06 div.offset, #cmp03 div.offset, #cmp04 div.offset, #cmp05 div.offset{ 
+	margin-top : -1000px; 
+	margin-left : -9000px;
+	position : absolute;
+
+	width : 150px;
+
+	background: black;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 	
+	padding: 3px;
+
+	z-index: 2;
+	
+	transition: margin-top .5s;
+	-moz-transition: margin-top .5s;
+	-webkit-transition: margin-top .5s ;
+}
+
+#cmp06 div.offset:before, #cmp03 div.offset:before, #cmp04 div.offset:before, #cmp05 div.offset:before{ 
+	content:""; 
+	position: absolute; 
+	left: 100%; 
+	top: 26px; 
+	width: 0; 
+	height: 0; 
+	border-top: 13px solid transparent; 
+	border-left: 26px solid black; 
+	border-bottom: 13px solid transparent; 
+	z-index: 1;
+}
+
+
+#cmp01 div.inner-offset, #cmp02 div.inner-offset {
+	background: #F8EC31;
+	position: relative;
+	color: black;
+	-moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	border-radius: 7px; 	
+	padding: 10px;
+}
+
+#cmp06 div.inner-offset, #cmp03 div.inner-offset, #cmp04 div.inner-offset, #cmp05 div.inner-offset {
+	background: #F8EC31;
+	position: relative;
+	color: black;
+	-moz-border-radius: 7px; 
+	-webkit-border-radius: 7px; 
+	border-radius: 7px; 	
+	padding: 10px;
+}
+
+#cmp01 div.inner-offset:before, #cmp02 div.inner-offset:before {
+	content:""; 
+	position: absolute; 
+	right: 100%; 
+	top: 24px; 
+	width: 0; 
+	height: 0; 
+	border-top: 12px solid transparent; 
+	border-right: 24px solid #F8EC31; 
+	border-bottom: 12px solid transparent; 
+	z-index: 4;
+}
+
+#cmp03 div.inner-offset:before,#cmp04 div.inner-offset:before, #cmp05 div.inner-offset:before,#cmp06 div.inner-offset:before{
+	content:""; 
+	position: absolute; 
+	left: 100%; 
+	top: 24px; 
+	width: 0; 
+	height: 0; 
+	border-top: 12px solid transparent; 
+	border-left: 24px solid #F8EC31; 
+	border-bottom: 12px solid transparent; 
+	z-index: 4;
+}
+
+
+
 
 /* This is the general hover and focus state link-span properties */
-ul#cmp li a:hover span.offset, ul#cmp li a:focus span.offset, ul#cmp li a:active span.offset {
-  color : #000;
-  background-image : none;
-  background-color : #ffffde;
-  border : 1px solid #000;
-  display : block;
-  width : 150px;
-  height : auto;
-  text-decoration : none;
-  cursor : pointer;
-}
+/* ul#cmp li a:hover div.offset, ul#cmp li a:focus div.offset, ul#cmp li a:active div.offset {
+	background-image : none;
+	
+	font-family: bebas_neueregular;
+	font-size: 16px; 
+	text-decoration : none;
 
+	cursor : pointer;
+	display : block;
+	width : 150px;
+	height : auto;
+
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
+}
+ */
+ 
 /* 
   This sets the inner span. Padding on the main span 
   was tried but produced odd results in IE (go figure) 
 */
-ul#cmp li a:hover span.offset span, ul#cmp li a:focus span.offset span, ul#cmp li a:active span.offset span {
+ul#cmp li a:hover div.offset div, ul#cmp li a:focus span.offset div, ul#cmp li a:active div.offset div {
   display : block;
-  width : 140px;
-  margin : 5px;
+  
 }
 
 /* 
@@ -377,7 +491,7 @@ ul#cmp li a#cmp01 {
 
 
 /* Now I have to set the position of the outer span in relation to the list item link */
-ul#cmp li a#cmp01:hover span.offset, ul#cmp li a#cmp01:focus span.offset, ul#cmp li a#cmp01:active span.offset {
+ul#cmp li a#cmp01:hover div.offset, ul#cmp li a#cmp01:focus div.offset, ul#cmp li a#cmp01:active div.offset {
   margin-top : 0px;
   margin-left: 240px;
 }
@@ -391,7 +505,7 @@ ul#cmp li a#cmp02 {
   margin-left : 250px;
 }
 
-ul#cmp li a#cmp02:hover span.offset, ul#cmp li a#cmp02:focus span.offset, ul#cmp li a#cmp02:active span.offset {
+ul#cmp li a#cmp02:hover div.offset, ul#cmp li a#cmp02:focus div.offset, ul#cmp li a#cmp02:active div.offset {
   margin-top : 0px;
   margin-left : 240px;
 }
@@ -401,25 +515,25 @@ ul#cmp li a#cmp03 {
   width : 240px;
   height : 240px;
   margin-top : -250px;
-  margin-left : 480px;
+  margin-left : 545px;
 }
 
-ul#cmp li a#cmp03:hover span.offset, ul#cmp li a#cmp03:focus span.offset, ul#cmp li a#cmp03:active span.offset {
+ul#cmp li a#cmp03:hover div.offset, ul#cmp li a#cmp03:focus div.offset, ul#cmp li a#cmp03:active div.offset {
   margin-top : 0px;
-  margin-left : -100px;
+  margin-left : -150px;
 }
 
 /* Hot-Spot Number Four (4) */
 ul#cmp li a#cmp04 {
-  width : 300px;
+  width : 230px;
   height : 240px;
   margin-top : -240px;
-  margin-left : 690px;
+  margin-left : 785px;
 }
 
-ul#cmp li a#cmp04:hover span.offset, ul#cmp li a#cmp04:focus span.offset, ul#cmp li a#cmp04:active span.offset {
+ul#cmp li a#cmp04:hover div.offset, ul#cmp li a#cmp04:focus div.offset, ul#cmp li a#cmp04:active div.offset {
   margin-top : 0px;
-  margin-left : -10px;
+  margin-left : -150px;
 }
 
 /* Hot-Spot Number Five (5) */
@@ -430,9 +544,9 @@ ul#cmp li a#cmp05 {
   margin-left : 0px;
 }
 
-ul#cmp li a#cmp05:hover span.offset, ul#cmp li a#cmp05:focus span.offset, ul#cmp li a#cmp05:active span.offset {
+ul#cmp li a#cmp05:hover div.offset, ul#cmp li a#cmp05:focus div.offset, ul#cmp li a#cmp05:active div.offset {
   margin-top : 0px;
-  margin-left : 0px;
+  margin-left : -100px;
 }
 
 /* Hot-Spot Number Five (6) */
@@ -443,7 +557,7 @@ ul#cmp li a#cmp06 {
   margin-left : 720px;
 }
 
-ul#cmp li a#cmp06:hover span.offset, ul#cmp li a#cmp06:focus span.offset, ul#cmp li a#cmp06:active span.offset {
+ul#cmp li a#cmp06:hover div.offset, ul#cmp li a#cmp06:focus div.offset, ul#cmp li a#cmp06:active div.offset {
   margin-top : 0px;
   margin-left : -100px;
 }
@@ -567,6 +681,8 @@ ul#cmp li a#cmp06:hover span.offset, ul#cmp li a#cmp06:focus span.offset, ul#cmp
 
 #escuela-contenido table {
 	height: 100%;
+	
+	
 }
 
 #escuela-contenido table td.logo {
